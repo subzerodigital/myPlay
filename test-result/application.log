@@ -1,0 +1,5 @@
+11 Jun 2012 18:47:34,845 INFO  ~ Starting /Users/yinanyang/myApp
+11 Jun 2012 18:47:36,548 WARN  ~ You're running Play! in DEV mode
+11 Jun 2012 18:47:36,708 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+11 Jun 2012 18:47:54,753 INFO  ~ Connected to jdbc:h2:mem:play;MODE=MYSQL;LOCK_MODE=0
+11 Jun 2012 18:47:55,717 INFO  ~ Application 'myPlayProject' is now started !

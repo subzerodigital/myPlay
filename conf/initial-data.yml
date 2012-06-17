@@ -6,6 +6,12 @@ User(bob):
     fullname:       Bob
     isAdmin:        true
     
+User(yinan):
+    email:          yinan@gmail.com
+    password:       secret
+    fullname:       Yinan
+    isAdmin:        true
+    
 User(jeff):
     email:          jeff@gmail.com
     password:       secret
@@ -14,7 +20,7 @@ User(jeff):
 Post(firstBobPost):
     title:          About the model layer
     postedAt:       2009-06-14
-    author:         bob
+    author:         yinan
     content:        >
                     The model has a central position in a Play! application. It is the domain-specific 
                     representation of the information on which the application operates.
