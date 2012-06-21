@@ -1,5 +1,5 @@
 #{extends 'main.html' /}
-#{set title:post.title /}
+#{set title: post.title /}
 
 
 
@@ -22,3 +22,28 @@
 
  
 #{display post:post, as:'full' /}
+
+
+<h3>Post a comment</h3>
+ 
+#{form @Application.postComment(post.id)}
+	
+	#{ifErrors}
+        <p class="error">
+            All fields are required!
+        </p>
+    #{/ifErrors}
+ 
+
+    <p>
+        <label for="author">Your name: </label>
+        <input type="text" name="author" id="author" />
+    </p>
+    <p>
+        <label for="content">Your message: </label>
+        <textarea name="content" id="content"></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Submit your comment" />
+    </p>
+#{/form}

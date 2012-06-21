@@ -34,7 +34,7 @@ public class BasicTest extends UnitTest {
     		
     		Post firstPost = bobPosts.get(0);
     		assertNotNull(firstPost);
-    		assertNotNull(firstPost.postAt);
+    		assertNotNull(firstPost.postedAt);
     }
     
     @Test

@@ -4,6 +4,7 @@ import play.*;
 import play.mvc.*;
 import java.util.*;
 import models.*;
+import play.data.validation.*;
 
 public class Application extends Controller {
 	//render front page
@@ -24,5 +25,16 @@ public class Application extends Controller {
     		Post post = Post.findById(id);
     		render(post);
     }
+    
+    public static void postComment(@Required Long postId, @Required String author, @Required String content){
+		 Post post = Post.findById(postId);
+		 
+		 if(validation.hasErrors()){
+			 render("Application/show.html",post);
+		 }
+		 
+		 post.addComment(author, content);
+		 show(postId);
+	}
 
 }
