@@ -14,5 +14,8 @@ GET     /favicon.ico                            404
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                staticDir:public
 
+# get a capture 
+GET     /captcha                                Application.captcha
+
 # Catch all
 *       /{controller}/{action}                  {controller}.{action}
